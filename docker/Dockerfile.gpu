@@ -1,0 +1,5 @@
+FROM 763104351884.dkr.ecr.us-west-2.amazonaws.com/tensorflow-training:2.4.1-gpu-py37-cu110-ubuntu18.04
+
+COPY tf2_cifar10.py /opt/ml/code/tf2_cifar10.py
+
+ENTRYPOINT ["python", "/opt/ml/code/tf2_cifar10.py"]
